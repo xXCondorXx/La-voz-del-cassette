@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre el Podcast | La Voz del Cassette</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Special+Elite&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html" class="logo-link">
+                <img src="assets/images/logo_cassette.jpg" alt="La Voz del Cassette Icon" class="logo-image">
+                <div class="logo-text">
+                    <h1>LA VOZ <span>DEL</span> CASSETTE</h1>
+                </div>
+            </a>
+        </div>
+        
+        <nav class="nav-links">
+            <a href="index.html">INICIO</a>
+            <a href="episodios.html">EPISODIOS</a>
+            <a href="sobre-el-podcast.html" class="active">SOBRE EL PODCAST</a>
+            <a href="detras-de-la-voz.html">DETRÁS DE LA VOZ</a>
+        </nav>
+
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-spotify"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </header>
+
+    <main style="padding-top: 100px;">
+        <section class="about-section" style="margin-top: 2rem; min-height: 50vh; padding: 2rem; max-width: 1100px; margin-left: auto; margin-right: auto;">
+            <div class="about-container" style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 4rem;">
+                <div class="about-poster" style="width: 100%; max-width: 600px;">
+                    <img src="assets/images/poster_completo.png" alt="La Voz del Cassette Póster Oficial" style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 0 50px rgba(0,0,0,0.8); border: 1px solid rgba(255,255,255,0.1);">
+                </div>
+                <div class="about-text" style="background: rgba(8, 8, 8, 0.6); padding: 3rem; border-radius: 20px; border: 1px solid rgba(192, 16, 16, 0.2); backdrop-filter: blur(10px);">
+                    <h3 class="section-title" style="margin-bottom: 2.5rem; font-size: 2.5rem; letter-spacing: 4px;">LA VOZ DEL CASSETTE</h3>
+                    <p class="section-desc" style="font-size: 1.25rem; line-height: 2; color: var(--text-light); max-width: 850px; margin: 0 auto;">
+                        <strong>La Voz del Cassette</strong> es un podcast de terror psicológico basado en grabaciones recuperadas.
+                        <br><br>
+                        Cada episodio revela fragmentos de historias perturbadoras: voces, recuerdos y sucesos que quedaron atrapados en el tiempo.
+                        <br><br>
+                        <span style="color: var(--accent-red); font-weight: 600; font-family: 'Special Elite', cursive; font-size: 1.4rem;">No todas las grabaciones están completas.</span>
+                        <br>
+                        <span style="color: var(--accent-red); font-weight: 600; font-family: 'Special Elite', cursive; font-size: 1.4rem;">No todas deberían ser escuchadas.</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-bottom" style="margin-top: 4rem;">
+            <div class="audio-wave small">
+                <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <p>No es ficción. Es advertencia.</p>
+            <p class="copyright">&copy; 2024 La Voz del Cassette. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

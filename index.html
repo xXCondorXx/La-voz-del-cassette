@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Voz del Cassette | Podcast de Terror</title>
+    <meta name="description" content="Un podcast de terror psicológico que explora lo que la mente esconde cuando nadie más está escuchando. No es ficción. Es advertencia.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Special+Elite&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html" class="logo-link">
+                <img src="assets/images/logo_cassette.jpg" alt="La Voz del Cassette Icon" class="logo-image">
+                <div class="logo-text">
+                    <h1>LA VOZ <span>DEL</span> CASSETTE</h1>
+                </div>
+            </a>
+        </div>
+        
+        <nav class="nav-links">
+            <a href="index.html" class="active">INICIO</a>
+            <a href="episodios.html">EPISODIOS</a>
+            <a href="sobre-el-podcast.html">SOBRE EL PODCAST</a>
+            <a href="detras-de-la-voz.html">DETRÁS DE LA VOZ</a>
+        </nav>
+
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-spotify"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <span class="proximamente">PRÓXIMAMENTE</span>
+                <h2 class="hero-title">LA VOZ <span>DEL</span><br>CASSETTE</h2>
+                <h3 class="hero-subtitle">No es ficción. Es advertencia.</h3>
+                <div class="audio-wave">
+                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+                <p class="hero-desc">Un podcast de terror psicológico que<br>explora lo que la mente esconde cuando<br>nadie más está escuchando.</p>
+                <button class="cta-btn primary-btn">
+                    <i class="fa-solid fa-play"></i> ESCUCHA EL TRÁILER
+                </button>
+            </div>
+        </section>
+
+        <section id="countdown" class="info-band">
+            <div class="countdown-container">
+                <h4>EL PRIMER EPISODIO SERÁ LIBERADO EN:</h4>
+                <div class="timer" id="timer">
+                    <div class="time-box">
+                        <span id="days">25</span>
+                        <label>DÍAS</label>
+                    </div>
+                    <span class="colon">:</span>
+                    <div class="time-box">
+                        <span id="hours">12</span>
+                        <label>HORAS</label>
+                    </div>
+                    <span class="colon">:</span>
+                    <div class="time-box">
+                        <span id="minutes">43</span>
+                        <label>MINUTOS</label>
+                    </div>
+                    <span class="colon">:</span>
+                    <div class="time-box">
+                        <span id="seconds">19</span>
+                        <label>SEGUNDOS</label>
+                    </div>
+                </div>
+            </div>
+            <div class="quote-container">
+                <blockquote>
+                    <span class="quote-mark open">"</span>
+                    A veces el verdadero terror<br>no está afuera...<br>está en tu cabeza.
+                    <span class="quote-mark close">"</span>
+                </blockquote>
+            </div>
+        </section>
+
+        <section id="episodios" class="episodes-navigation-wrapper" style="position: relative; max-width: 1250px; margin: 4rem auto; padding: 0 4rem;">
+            <!-- Flecha Izquierda -->
+            <button class="nav-arrow left" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%); background: transparent; border: none; color: var(--accent-red); font-size: 2.5rem; cursor: pointer; z-index: 10; transition: color 0.3s ease;">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <div class="episodes-showcase" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; width: 100%;">
+                <!-- Episodio 1 -->
+                <div class="episode-card-index" style="background: var(--bg-panel); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; transition: all 0.3s ease;">
+                    <div class="story-image" style="height: 300px; width: 100%; position: relative;">
+                        <img src="assets/images/maria.png" alt="María - Episodio 1" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div style="position: absolute; top: 1rem; left: 1rem; background: rgba(192, 16, 16, 0.8); padding: 0.3rem 0.8rem; border-radius: 4px; font-size: 0.7rem; font-family: var(--font-heading);">EPISODIO 1</div>
+                    </div>
+                    <div class="story-text" style="padding: 2rem; flex-grow: 1; display: flex; flex-direction: column;">
+                        <h3 style="color: var(--accent-red); font-size: 1.8rem; margin-bottom: 1rem;">MARÍA</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 2rem;">María cree que todo terminó.<br>Pero algo la sigue observando…<br>desde donde no debería existir.</p>
+                        
+                        <div style="margin-top: auto; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem;">
+                            <a href="#" class="social-cta" style="display: flex; align-items: center; gap: 0.8rem; color: var(--text-main); font-family: var(--font-heading); font-size: 0.8rem; letter-spacing: 1px;">
+                                <i class="fa-solid fa-share-nodes" style="color: var(--accent-red);"></i> SÍGUENOS EN NUESTRAS REDES
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Episodio 2 -->
+                <div class="episode-card-index" style="background: var(--bg-panel); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; transition: all 0.3s ease;">
+                    <div class="story-image" style="height: 300px; width: 100%; position: relative;">
+                        <img src="assets/images/familia.png" alt="Familia - Episodio 2" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div style="position: absolute; top: 1rem; left: 1rem; background: rgba(192, 16, 16, 0.8); padding: 0.3rem 0.8rem; border-radius: 4px; font-size: 0.7rem; font-family: var(--font-heading);">EPISODIO 2</div>
+                    </div>
+                    <div class="story-text" style="padding: 2rem; flex-grow: 1; display: flex; flex-direction: column;">
+                        <h3 style="color: var(--accent-red); font-size: 1.8rem; margin-bottom: 1rem;">FAMILIA</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 2rem;">Un velorio.<br>Una decisión.<br>Y algo que no debía pasar… pasó.</p>
+                        
+                        <div style="margin-top: auto; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem;">
+                            <a href="#" class="social-cta" style="display: flex; align-items: center; gap: 0.8rem; color: var(--text-main); font-family: var(--font-heading); font-size: 0.8rem; letter-spacing: 1px;">
+                                <i class="fa-solid fa-share-nodes" style="color: var(--accent-red);"></i> SÍGUENOS EN NUESTRAS REDES
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flecha Derecha -->
+            <button class="nav-arrow right" style="position: absolute; right: 0; top: 50%; transform: translateY(-50%); background: transparent; border: none; color: var(--accent-red); font-size: 2.5rem; cursor: pointer; z-index: 10; transition: color 0.3s ease;">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </section>
+
+        <section id="sobre" class="features">
+            <h3 class="section-title">¿DE QUÉ TRATA?</h3>
+            <p class="section-desc">Cada episodio es una cinta recuperada del olvido.<br>Historias reales, confesiones anónimas y sucesos inexplicables<br>que te harán cuestionar tu propia realidad.</p>
+            
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fa-solid fa-brain"></i></div>
+                    <h4>TERROR<br>PSICOLÓGICO</h4>
+                    <p>Exploramos los rincones más oscuros de la mente humana.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fa-solid fa-ear-listen"></i></div>
+                    <h4>NARRACIÓN<br>INMERSIVA</h4>
+                    <p>Una experiencia sonora que te hará sentir parte de la historia.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fa-solid fa-tape"></i></div>
+                    <h4>CINTAS<br>RECUPERADAS</h4>
+                    <p>Cada episodio es una cinta de algo que nunca debió ser escuchado.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fa-solid fa-eye-slash"></i></div>
+                    <h4>REALIDAD<br>DIFUSA</h4>
+                    <p>No siempre sabrás qué es real y qué es parte de la cinta.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="detras" class="behind-the-voice">
+            <div class="behind-content">
+                <h3 class="section-title">DETRÁS DE LA VOZ</h3>
+                <p>¿Quién es el dueño de la voz que te susurra en la oscuridad?<br>Descubre el proceso de creación y los secretos detrás de cada cinta recuperada en nuestra sección especial.</p>
+                <a href="detras-de-la-voz.html" class="cta-btn secondary-btn" style="margin-top: 2rem;">
+                    <i class="fa-solid fa-microphone-lines"></i> CONOCE MÁS
+                </a>
+            </div>
+        </section>
+
+        <section class="platforms">
+            <h3 class="section-title">ESCÚCHANOS EN</h3>
+            <div class="platform-logos">
+                <div class="platform"><i class="fa-brands fa-spotify" style="color: #1DB954;"></i> Spotify</div>
+                <div class="platform"><i class="fa-solid fa-podcast" style="color: #a855f7;"></i> Apple Podcasts</div>
+                <div class="platform"><i class="fa-brands fa-google" style="color: #ea4335;"></i> Google Podcasts</div>
+                <div class="platform"><i class="fa-brands fa-youtube" style="color: #FF0000;"></i> YouTube</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="subscribe-section">
+            <div class="subscribe-text">
+                <h3>SUSCRÍBETE Y NO TE PIERDAS NADA</h3>
+                <p>Recibe contenido exclusivo, adelantos y<br>que se publicarán en ningún otro lugar.</p>
+            </div>
+            <form class="subscribe-form" onsubmit="event.preventDefault();">
+                <input type="email" placeholder="Tu correo electrónico" required>
+                <button type="submit">SUSCRIBIRME</button>
+            </form>
+        </div>
+        <div class="footer-bottom">
+            <div class="audio-wave small">
+                <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <p>No es ficción. Es advertencia.</p>
+            <p class="copyright">&copy; 2024 La Voz del Cassette. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
