@@ -89,4 +89,25 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Trailer Audio Logic
+    const trailerBtn = document.getElementById('trailer-btn');
+    const trailerAudio = document.getElementById('trailer-audio');
+
+    if (trailerBtn && trailerAudio) {
+        trailerBtn.addEventListener('click', () => {
+            if (trailerAudio.paused) {
+                trailerAudio.play();
+                trailerBtn.innerHTML = '<i class="fa-solid fa-pause"></i> PAUSAR TRÁILER';
+            } else {
+                trailerAudio.pause();
+                trailerBtn.innerHTML = '<i class="fa-solid fa-play"></i> ESCUCHA EL TRÁILER';
+            }
+        });
+
+        // Reset button when audio ends
+        trailerAudio.addEventListener('ended', () => {
+            trailerBtn.innerHTML = '<i class="fa-solid fa-play"></i> ESCUCHA EL TRÁILER';
+        });
+    }
 });
